@@ -379,3 +379,91 @@ faqSearch.addEventListener('blur', () => {
 
 console.log('%c❓ Sistema FAQ Cargado', 
     'color: #00b894; font-size: 14px; font-weight: bold;');
+
+// ===========================
+// MENÚ HAMBURGUESA
+// ===========================
+
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+const navbar = document.querySelector('.navbar');
+
+// Verificar que los elementos existen
+if (menuToggle && navMenu) {
+    
+    // Toggle del menú
+    menuToggle.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevenir que el click se propague
+        
+        // Toggle de la clase active
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        
+        // Prevenir scroll cuando el menú está abierto
+        if (navMenu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Animación del icono hamburguesa
+        const spans = menuToggle.querySelectorAll('span');
+        if (navMenu.classList.contains('active')) {
+            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        } else {
+            spans[0].style.transform = 'rotate(0) translate(0, 0)';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'rotate(0) translate(0, 0)';
+        }
+    });
+    
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            // Resetear animación del icono
+            const spans = menuToggle.querySelectorAll('span');
+            spans[0].style.transform = 'rotate(0) translate(0, 0)';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'rotate(0) translate(0, 0)';
+        });
+    });
+    
+    // Cerrar menú al hacer clic fuera de él
+    document.addEventListener('click', function(e) {
+        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                
+                const spans = menuToggle.querySelectorAll('span');
+                spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'rotate(0) translate(0, 0)';
+            }
+        }
+    });
+    
+    // Cerrar menú con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            
+            const spans = menuToggle.querySelectorAll('span');
+            spans[0].style.transform = 'rotate(0) translate(0, 0)';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'rotate(0) translate(0, 0)';
+        }
+    });
+    
+} else {
+    console.error('⚠️ No se encontraron los elementos del menú móvil');
+}
