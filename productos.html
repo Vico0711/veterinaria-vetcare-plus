@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - VetCare Plus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetCare Plus</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html" class="btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Productos -->
+    <section class="page-hero products-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="page-label">Tienda de Productos</span>
+                <h1 class="page-title">Todo lo que tu mascota necesita</h1>
+                <p class="page-subtitle">Productos de alta calidad para el cuidado, alimentación y bienestar de tu mejor
+                    amigo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de búsqueda y carrito -->
+    <section class="products-toolbar">
+        <div class="container">
+            <div class="toolbar-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="productSearch" placeholder="Buscar productos...">
+                </div>
+                <button class="cart-button" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                    <span class="cart-text">Mi Carrito</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Productos -->
+    <section class="products-filters">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-categories">
+                    <button class="category-btn active" data-category="todos">
+                        <i class="fas fa-th-large"></i> Todos
+                    </button>
+                    <button class="category-btn" data-category="alimentos">
+                        <i class="fas fa-bone"></i> Alimentos
+                    </button>
+                    <button class="category-btn" data-category="accesorios">
+                        <i class="fas fa-tshirt"></i> Accesorios
+                    </button>
+                    <button class="category-btn" data-category="higiene">
+                        <i class="fas fa-bath"></i> Higiene
+                    </button>
+                    <button class="category-btn" data-category="juguetes">
+                        <i class="fas fa-football-ball"></i> Juguetes
+                    </button>
+                    <button class="category-btn" data-category="salud">
+                        <i class="fas fa-medkit"></i> Salud
+                    </button>
+                    <button class="category-btn" data-category="camas">
+                        <i class="fas fa-bed"></i> Camas y Casas
+                    </button>
+                </div>
+                <div class="filter-sort">
+                    <select id="sortProducts">
+                        <option value="featured">Destacados</option>
+                        <option value="price-asc">Precio: Menor a Mayor</option>
+                        <option value="price-desc">Precio: Mayor a Menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Productos -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+
+                <!-- Producto 1 -->
+                <div class="product-card" data-category="alimentos" data-name="Royal Canin Adult" data-price="45">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=500"
+                            alt="Alimento Premium">
+                        <div class="product-badge new">Nuevo</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="1">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Alimentos</div>
+                        <h3 class="product-name">Royal Canin Adult 15kg</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="product-description">Alimento completo y balanceado para perros adultos de todas las
+                            razas.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="1" data-name="Royal Canin Adult 15kg"
+                                data-price="45">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="accesorios" data-name="Collar Reflectivo" data-price="15">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500"
+                            alt="Collar para perro">
+                        <div class="product-badge sale">-20%</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="2">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accesorios</div>
+                        <h3 class="product-name">Collar Reflectivo Ajustable</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="product-description">Collar ajustable con material reflectivo para paseos nocturnos
+                            seguros.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-old">$18.00</span>
+                                <span class="price-current">$15.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="2" data-name="Collar Reflectivo Ajustable"
+                                data-price="15">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="higiene" data-name="Shampoo Hipoalergénico" data-price="12">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500"
+                            alt="Shampoo para mascotas">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="3">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Higiene</div>
+                        <h3 class="product-name">Shampoo Hipoalergénico 500ml</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <p class="product-description">Fórmula suave sin parabenos, ideal para pieles sensibles y
+                            alérgicas.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$12.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="3" data-name="Shampoo Hipoalergénico 500ml"
+                                data-price="12">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="juguetes" data-name="Pelota Interactiva" data-price="18">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500"
+                            alt="Juguete para mascotas">
+                        <div class="product-badge trending">Popular</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="4">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Juguetes</div>
+                        <h3 class="product-name">Pelota Interactiva LED</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <p class="product-description">Pelota con luces LED y movimiento automático para horas de
+                            diversión.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$18.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="4" data-name="Pelota Interactiva LED"
+                                data-price="18">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card" data-category="salud" data-name="Vitaminas Multivitamínico" data-price="22">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500"
+                            alt="Vitaminas para mascotas">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="5">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Salud</div>
+                        <h3 class="product-name">Vitaminas Multivitamínico</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <p class="product-description">Complemento vitamínico completo para fortalecer el sistema
+                            inmune.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$22.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="5" data-name="Vitaminas Multivitamínico"
+                                data-price="22">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card" data-category="camas" data-name="Cama Ortopédica" data-price="65">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1618224401806-f31c31f3d435?w=500"
+                            alt="Cama para mascotas">
+                        <div class="product-badge new">Nuevo</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="6">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Camas y Casas</div>
+                        <h3 class="product-name">Cama Ortopédica Memory Foam</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <p class="product-description">Cama con memory foam para máximo confort y apoyo articular.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$65.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="6" data-name="Cama Ortopédica Memory Foam"
+                                data-price="65">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="product-card" data-category="alimentos" data-name="ProPlan Cachorro" data-price="38">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500"
+                            alt="Alimento para cachorros">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="7">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Alimentos</div>
+                        <h3 class="product-name">ProPlan Cachorro 10kg</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <p class="product-description">Nutrición específica para el crecimiento saludable de cachorros.
+                        </p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="7" data-name="ProPlan Cachorro 10kg"
+                                data-price="38">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="product-card" data-category="accesorios" data-name="Correa Retráctil" data-price="25">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?w=500"
+                            alt="Correa retráctil">
+                        <div class="product-badge sale">-15%</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="8">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accesorios</div>
+                        <h3 class="product-name">Correa Retráctil 5 metros</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2)</span>
+                        </div>
+                        <p class="product-description">Correa resistente con sistema de retracción automática y freno.
+                        </p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-old">$29.00</span>
+                                <span class="price-current">$25.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="8" data-name="Correa Retráctil 5 metros"
+                                data-price="25">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="product-card" data-category="higiene" data-name="Cepillo Dental" data-price="8">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500"
+                            alt="Cepillo dental">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="9">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Higiene</div>
+                        <h3 class="product-name">Kit Cepillo Dental + Pasta</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.4)</span>
+                        </div>
+                        <p class="product-description">Kit completo para higiene dental con sabor agradable para
+                            mascotas.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$8.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="9" data-name="Kit Cepillo Dental + Pasta"
+                                data-price="8">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="product-card" data-category="juguetes" data-name="Kong Rellenable" data-price="14">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?w=500"
+                            alt="Juguete Kong">
+                        <div class="product-badge trending">Popular</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="10">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Juguetes</div>
+                        <h3 class="product-name">Kong Rellenable Resistente</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <p class="product-description">Juguete indestructible que se puede rellenar con premios y
+                            snacks.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$14.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="10" data-name="Kong Rellenable Resistente"
+                                data-price="14">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 11 -->
+                <div class="product-card" data-category="salud" data-name="Antipulgas Spot-On" data-price="16">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10c1dd7aa5b8?w=500" alt="Antipulgas">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="11">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Salud</div>
+                        <h3 class="product-name">Antipulgas Spot-On 3 pipetas</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="product-description">Protección contra pulgas, garrapatas y mosquitos por 3 meses.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-current">$16.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="11" data-name="Antipulgas Spot-On 3 pipetas"
+                                data-price="16">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 12 -->
+                <div class="product-card" data-category="camas" data-name="Casa Térmica" data-price="55">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500"
+                            alt="Casa para mascotas">
+                        <div class="product-badge sale">-25%</div>
+                        <div class="product-overlay">
+                            <button class="quick-view-btn" data-product="12">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Camas y Casas</div>
+                        <h3 class="product-name">Casa Térmica Acogedora</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <p class="product-description">Casa térmica con techo removible y cojín lavable ultra suave.</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="price-old">$73.00</span>
+                                <span class="price-current">$55.00</span>
+                            </div>
+                            <button class="add-to-cart-btn" data-id="12" data-name="Casa Térmica Acogedora"
+                                data-price="55">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mensaje sin resultados -->
+            <div class="no-products-message" id="noProductsMessage" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta con otra búsqueda o categoría</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panel del Carrito -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Mi Carrito</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-content" id="cartContent">
+            <div class="empty-cart" id="emptyCart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+                <span>¡Agrega productos para comenzar!</span>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount" id="totalAmount">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">
+                <i class="fas fa-check"></i> Finalizar Compra
+            </button>
+            <button class="btn btn-secondary clear-cart-btn" id="clearCart">
+                <i class="fas fa-trash"></i> Vaciar Carrito
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay del Carrito -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Necesitas asesoría para elegir?</h2>
+                <p>Nuestro equipo está listo para ayudarte a encontrar los mejores productos para tu mascota</p>
+                <a href="contacto.html" class="btn btn-light">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>VetCare Plus</span>
+                    </div>
+                    <p>Cuidando a tus mascotas con amor y profesionalismo desde 2014.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="servicios.html">Consultas</a></li>
+                        <li><a href="servicios.html">Vacunación</a></li>
+                        <li><a href="servicios.html">Cirugías</a></li>
+                        <li><a href="servicios.html">Emergencias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +593 99 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vetcareplus.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Dom: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 VetCare Plus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+<!-- Botón Flotante FAQ -->
+<button class="faq-float-btn" id="faqFloatBtn" aria-label="Preguntas Frecuentes">
+    <i class="fas fa-question"></i>
+    <span class="faq-pulse"></span>
+</button>
+
+<!-- Panel de Preguntas Frecuentes (mismo código que antes) -->
+<div class="faq-panel" id="faqPanel">
+        <div class="faq-header">
+            <h3><i class="fas fa-comments"></i> Preguntas Frecuentes</h3>
+            <button class="faq-close" id="faqClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="faq-content">
+            <div class="faq-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Buscar pregunta...">
+            </div>
+            
+            <div class="faq-items">
+                <div class="faq-item" data-keywords="vacuna vacunacion edad cachorro gatito">
+                    <div class="faq-question">
+                        <i class="fas fa-syringe"></i>
+                        <span>¿A partir de qué edad se puede empezar a vacunar?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los cachorros y gatitos pueden comenzar su esquema de vacunación a partir de las <strong>6-8 semanas de edad</strong>. El calendario típico incluye:</p>
+                        <ul>
+                            <li>Primera dosis: 6-8 semanas</li>
+                            <li>Segunda dosis: 10-12 semanas</li>
+                            <li>Tercera dosis: 14-16 semanas</li>
+                            <li>Refuerzos anuales posteriores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="desparasitacion vacunacion orden primero">
+                    <div class="faq-question">
+                        <i class="fas fa-pills"></i>
+                        <span>¿Qué va primero, la desparasitación o la vacunación?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Siempre la desparasitación va primero.</strong> Es fundamental desparasitar a tu mascota <strong>15 días antes</strong> de aplicar cualquier vacuna. Esto garantiza que:</p>
+                        <ul>
+                            <li>El sistema inmune responda mejor a la vacuna</li>
+                            <li>La efectividad de la vacunación sea óptima</li>
+                            <li>Se eviten complicaciones durante el proceso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="emergencia urgencia horario atencion">
+                    <div class="faq-question">
+                        <i class="fas fa-ambulance"></i>
+                        <span>¿Atienden emergencias las 24 horas?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, contamos con <strong>servicio de emergencias 24/7</strong> todos los días del año. Nuestro equipo veterinario está disponible para atender cualquier urgencia que presente tu mascota, incluyendo:</p>
+                        <ul>
+                            <li>Traumatismos y accidentes</li>
+                            <li>Intoxicaciones</li>
+                            <li>Dificultad respiratoria</li>
+                            <li>Convulsiones</li>
+                            <li>Complicaciones durante el parto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="consulta precio costo primera vez">
+                    <div class="faq-question">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>¿Cuánto cuesta una consulta general?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los costos de nuestras consultas son:</p>
+                        <ul>
+                            <li>Consulta general: $25 - $35</li>
+                            <li>Primera consulta con descuento: $20</li>
+                            <li>Consulta especializada: $40 - $60</li>
+                            <li>Emergencias: $50 - $80 (según horario)</li>
+                        </ul>
+                        <p><strong>Nota:</strong> Los precios pueden variar según tratamientos o procedimientos adicionales necesarios.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="alimentacion comida dieta mascota">
+                    <div class="faq-question">
+                        <i class="fas fa-bone"></i>
+                        <span>¿Qué alimento es mejor para mi mascota?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La alimentación ideal depende de varios factores como edad, raza, tamaño y condiciones de salud. Recomendamos:</p>
+                        <ul>
+                            <li><strong>Cachorros:</strong> Alimento especial para cachorro con alto contenido proteico</li>
+                            <li><strong>Adultos:</strong> Alimento balanceado según nivel de actividad</li>
+                            <li><strong>Seniors:</strong> Alimento especial para mascotas mayores</li>
+                            <li><strong>Dietas especiales:</strong> Para alergias, sobrepeso o condiciones médicas</li>
+                        </ul>
+                        <p>Te recomendamos agendar una consulta nutricional para un plan personalizado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="baño grooming estetica cuando">
+                    <div class="faq-question">
+                        <i class="fas fa-bath"></i>
+                        <span>¿Cada cuánto tiempo debo bañar a mi mascota?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La frecuencia del baño depende del tipo de pelaje y estilo de vida:</p>
+                        <ul>
+                            <li><strong>Perros de pelo corto:</strong> Cada 4-6 semanas</li>
+                            <li><strong>Perros de pelo largo:</strong> Cada 3-4 semanas</li>
+                            <li><strong>Gatos:</strong> Generalmente no necesitan baños frecuentes (cada 2-3 meses o cuando sea necesario)</li>
+                            <li><strong>Mascotas con piel sensible:</strong> Cada 6-8 semanas con productos especiales</li>
+                        </ul>
+                        <p><strong>Importante:</strong> El baño excesivo puede resecar la piel y eliminar aceites naturales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="esterilizacion castracion edad beneficios">
+                    <div class="faq-question">
+                        <i class="fas fa-heart"></i>
+                        <span>¿Cuándo es recomendable esterilizar/castrar?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La edad ideal para la esterilización/castración es:</p>
+                        <ul>
+                            <li><strong>Perros y gatos:</strong> Entre 6-9 meses de edad</li>
+                            <li><strong>Razas grandes:</strong> Puede esperarse hasta 12-15 meses</li>
+                        </ul>
+                        <p><strong>Beneficios:</strong></p>
+                        <ul>
+                            <li>Previene embarazos no deseados</li>
+                            <li>Reduce riesgo de cáncer reproductivo</li>
+                            <li>Disminuye comportamientos agresivos</li>
+                            <li>Elimina el celo y sangrado en hembras</li>
+                            <li>Aumenta la esperanza de vida</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-keywords="sintomas enfermo veterinario cuando llevar">
+                    <div class="faq-question">
+                        <i class="fas fa-thermometer"></i>
+                        <span>¿Cuándo debo llevar a mi mascota al veterinario?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Debes acudir inmediatamente si observas:</p>
+                        <ul>
+                            <li>Vómitos o diarrea persistente (más de 24 horas)</li>
+                            <li>Pérdida de apetito por más de 24 horas</li>
+                            <li>Letargo o debilidad extrema</li>
+                            <li>Dificultad para respirar</li>
+                            <li>Sangrado anormal</li>
+                            <li>Convulsiones</li>
+                            <li>Dolor evidente o quejidos</li>
+                            <li>Cambios en comportamiento habitual</li>
+                        </ul>
+                        <p><strong>Recuerda:</strong> Es mejor prevenir que lamentar. Ante cualquier duda, contáctanos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-footer">
+                <p>¿No encuentras tu respuesta?</p>
+                <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+
+<div class="faq-overlay" id="faqOverlay"></div>
+
+<!-- Modal de Vista Rápida -->
+    <div class="quick-view-modal" id="quickViewModal">
+        <div class="quick-view-content">
+            <button class="quick-view-close" id="quickViewClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="quick-view-body">
+                <div class="quick-view-image">
+                    <img id="modalProductImage" src="" alt="">
+                    <div class="modal-badge" id="modalBadge"></div>
+                </div>
+                <div class="quick-view-info">
+                    <div class="modal-category" id="modalCategory"></div>
+                    <h2 class="modal-product-name" id="modalProductName"></h2>
+                    <div class="modal-rating" id="modalRating"></div>
+                    <div class="modal-price-section">
+                        <div class="modal-price-old" id="modalPriceOld"></div>
+                        <div class="modal-price-current" id="modalPriceCurrent"></div>
+                    </div>
+                    <p class="modal-description" id="modalDescription"></p>
+                    
+                    <div class="modal-features">
+                        <h4><i class="fas fa-check-circle"></i> Características:</h4>
+                        <ul id="modalFeaturesList">
+                            <!-- Se llenará dinámicamente -->
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-quantity">
+                        <label>Cantidad:</label>
+                        <div class="modal-quantity-control">
+                            <button class="modal-qty-btn minus" id="modalQtyMinus">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" id="modalQuantity" value="1" min="1" max="99" readonly>
+                            <button class="modal-qty-btn plus" id="modalQtyPlus">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button class="btn btn-primary modal-add-cart" id="modalAddToCart">
+                            <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+                        </button>
+                        <button class="btn btn-secondary modal-buy-now">
+                            <i class="fas fa-bolt"></i> Comprar Ahora
+                        </button>
+                    </div>
+                    
+                    <div class="modal-info-extra">
+                        <div class="info-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Envío gratis en compras superiores a $50</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantía de satisfacción 30 días</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Soporte al cliente 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay del Modal -->
+    <div class="quick-view-overlay" id="quickViewOverlay"></div>
+
+<script src="js/main.js"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - VetCare Plus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetCare Plus</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="equipo.html" class="active">Equipo</a></li>
+                    <li><a href="contacto.html" class="btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Equipo -->
+    <section class="page-hero team-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="page-label">Nuestro Equipo</span>
+                <h1 class="page-title">Profesionales dedicados al cuidado de tu mascota</h1>
+                <p class="page-subtitle">Contamos con un equipo de veterinarios altamente calificados, apasionados por el bienestar animal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats del Equipo -->
+    <section class="team-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>Veterinarios</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="8">0</h3>
+                    <p>Especialistas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p>Certificaciones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Especialidad -->
+    <section class="team-filters">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Conoce a Nuestro Equipo</span>
+                <h2 class="section-title">Especialistas en diferentes áreas</h2>
+            </div>
+            <div class="specialty-filters">
+                <button class="specialty-btn active" data-specialty="todos">
+                    <i class="fas fa-users"></i> Todos
+                </button>
+                <button class="specialty-btn" data-specialty="general">
+                    <i class="fas fa-stethoscope"></i> General
+                </button>
+                <button class="specialty-btn" data-specialty="cirugia">
+                    <i class="fas fa-user-md"></i> Cirugía
+                </button>
+                <button class="specialty-btn" data-specialty="emergencias">
+                    <i class="fas fa-ambulance"></i> Emergencias
+                </button>
+                <button class="specialty-btn" data-specialty="especializado">
+                    <i class="fas fa-microscope"></i> Especializado
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid del Equipo -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-grid">
+                
+                <!-- Miembro 1 -->
+                <div class="team-card" data-specialty="general cirugia">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=12" alt="Dr. Carlos Mendoza">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dr. Carlos Mendoza</h3>
+                                <p class="team-role">Director Médico</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Cirugía</span>
+                                    <span class="specialty-tag">Medicina General</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dr. Carlos Mendoza</h3>
+                                <p class="back-title">Director Médico</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Central - 2005</p>
+                                    <p><i class="fas fa-briefcase"></i> 18 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Cirugía</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Experto en cirugías de tejidos blandos y ortopedia. Lideró más de 500 procedimientos quirúrgicos exitosos.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234567"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="team-card" data-specialty="general especializado">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=5" alt="Dra. María González">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dra. María González</h3>
+                                <p class="team-role">Medicina Interna</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Cardiología</span>
+                                    <span class="specialty-tag">Medicina Interna</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dra. María González</h3>
+                                <p class="back-title">Medicina Interna</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad San Francisco - 2008</p>
+                                    <p><i class="fas fa-briefcase"></i> 15 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Cardiología</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Especializada en enfermedades cardiovasculares y medicina interna. Certificada en ecocardiografía veterinaria.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234568"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="team-card" data-specialty="emergencias general">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=33" alt="Dr. Roberto Silva">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dr. Roberto Silva</h3>
+                                <p class="team-role">Jefe de Emergencias</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Emergencias</span>
+                                    <span class="specialty-tag">Cuidados Intensivos</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dr. Roberto Silva</h3>
+                                <p class="back-title">Jefe de Emergencias</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad de Guayaquil - 2010</p>
+                                    <p><i class="fas fa-briefcase"></i> 13 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en UCI</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Experto en manejo de casos críticos y traumatología. Disponible 24/7 para emergencias veterinarias.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234569"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="team-card" data-specialty="especializado">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=20" alt="Dra. Ana Martínez">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dra. Ana Martínez</h3>
+                                <p class="team-role">Dermatóloga</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Dermatología</span>
+                                    <span class="specialty-tag">Alergias</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.8)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dra. Ana Martínez</h3>
+                                <p class="back-title">Dermatóloga</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Técnica - 2012</p>
+                                    <p><i class="fas fa-briefcase"></i> 11 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Dermatología</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Especialista en enfermedades de la piel, alergias y tratamientos dermatológicos avanzados para mascotas.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234570"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 5 -->
+                <div class="team-card" data-specialty="cirugia especializado">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=15" alt="Dr. Luis Torres">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dr. Luis Torres</h3>
+                                <p class="team-role">Cirujano Ortopedista</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Ortopedia</span>
+                                    <span class="specialty-tag">Traumatología</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dr. Luis Torres</h3>
+                                <p class="back-title">Cirujano Ortopedista</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Espol - 2009</p>
+                                    <p><i class="fas fa-briefcase"></i> 14 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Ortopedia</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Experto en cirugías ortopédicas complejas, fracturas y reconstrucción de ligamentos en animales.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234571"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="team-card" data-specialty="especializado">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=47" alt="Dra. Patricia Ruiz">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dra. Patricia Ruiz</h3>
+                                <p class="team-role">Odontóloga</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Odontología</span>
+                                    <span class="specialty-tag">Cirugía Oral</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dra. Patricia Ruiz</h3>
+                                <p class="back-title">Odontóloga</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Católica - 2011</p>
+                                    <p><i class="fas fa-briefcase"></i> 12 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Odontología</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Dedicada a la salud dental de las mascotas. Experta en limpiezas dentales y cirugías orales complejas.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234572"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 7 -->
+                <div class="team-card" data-specialty="general">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=68" alt="Dr. Fernando López">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dr. Fernando López</h3>
+                                <p class="team-role">Veterinario General</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Medicina General</span>
+                                    <span class="specialty-tag">Vacunación</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dr. Fernando López</h3>
+                                <p class="back-title">Veterinario General</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Agraria - 2014</p>
+                                    <p><i class="fas fa-briefcase"></i> 9 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Certificado en Prevención</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Especializado en medicina preventiva, consultas generales y programas de vacunación personalizados.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234573"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miembro 8 -->
+                <div class="team-card" data-specialty="especializado">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-image">
+                                <img src="https://i.pravatar.cc/400?img=32" alt="Dra. Carmen Vega">
+                                <div class="team-overlay">
+                                    <button class="view-profile-btn">
+                                        <i class="fas fa-info-circle"></i> Ver Perfil
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">Dra. Carmen Vega</h3>
+                                <p class="team-role">Nutricionista</p>
+                                <div class="team-specialties">
+                                    <span class="specialty-tag">Nutrición</span>
+                                    <span class="specialty-tag">Dietética</span>
+                                </div>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(4.6)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <div class="back-content">
+                                <h3>Dra. Carmen Vega</h3>
+                                <p class="back-title">Nutricionista</p>
+                                <div class="back-info">
+                                    <p><i class="fas fa-graduation-cap"></i> Universidad Laica - 2013</p>
+                                    <p><i class="fas fa-briefcase"></i> 10 años de experiencia</p>
+                                    <p><i class="fas fa-award"></i> Especialista en Nutrición</p>
+                                </div>
+                                <div class="back-description">
+                                    <p>Experta en planes nutricionales personalizados, dietas terapéuticas y control de peso para mascotas.</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="tel:+593991234574"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Valores -->
+    <section class="team-values">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nuestros Valores</span>
+                <h2 class="section-title">Lo que nos define como equipo</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pasión</h3>
+                    <p>Amor genuino por los animales y dedicación total a su bienestar y salud.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Compromiso</h3>
+                    <p>Nos comprometemos a brindar la mejor atención veterinaria con responsabilidad.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Actualizamos constantemente nuestros conocimientos y tecnología médica.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Colaboramos como un equipo unido para ofrecer atención integral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Quieres conocer a nuestro equipo en persona?</h2>
+                <p>Agenda una cita y conoce a los profesionales que cuidarán de tu mascota</p>
+                <a href="contacto.html" class="btn btn-light">Agendar Cita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>VetCare Plus</span>
+                    </div>
+                    <p>Cuidando a tus mascotas con amor y profesionalismo desde 2014.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="servicios.html">Consultas</a></li>
+                        <li><a href="servicios.html">Vacunación</a></li>
+                        <li><a href="servicios.html">Cirugías</a></li>
+                        <li><a href="servicios.html">Emergencias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +593 99 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vetcareplus.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Dom: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VetCare Plus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Botón Flotante FAQ -->
+<button class="faq-float-btn" id="faqFloatBtn" aria-label="Preguntas Frecuentes">
+    <i class="fas fa-question"></i>
+    <span class="faq-pulse"></span>
+</button>
+
+<!-- Panel de Preguntas Frecuentes (mismo código que antes) -->
+<div class="faq-panel" id="faqPanel">
+    <!-- Aquí va el mismo contenido del FAQ -->
+</div>
+
+<div class="faq-overlay" id="faqOverlay"></div>
+
+<script src="js/main.js"></script>
+<script src="js/equipo.js"></script>
+</body>
+</html>

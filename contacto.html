@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - VetCare Plus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetCare Plus</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html" class="btn-contact active">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Contacto -->
+    <section class="page-hero contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="page-label">Contáctanos</span>
+                <h1 class="page-title">Estamos aquí para ayudarte</h1>
+                <p class="page-subtitle">Agenda una cita o contáctanos para cualquier consulta. Tu mascota es nuestra prioridad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto Rápido -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-grid">
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="qc-info">
+                        <h3>Llámanos</h3>
+                        <p><a href="tel:+593991234567">+593 99 123 4567</a></p>
+                        <span>Atención 24/7</span>
+                    </div>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="qc-info">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@vetcareplus.com">info@vetcareplus.com</a></p>
+                        <span>Respuesta en 24 horas</span>
+                    </div>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="qc-info">
+                        <h3>Ubicación</h3>
+                        <p>Av. Principal 123, Ciudad</p>
+                        <span>Guayaquil, Ecuador</span>
+                    </div>
+                </div>
+                <div class="quick-contact-card">
+                    <div class="qc-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="qc-info">
+                        <h3>Horario</h3>
+                        <p>24 horas, 7 días</p>
+                        <span>Emergencias disponibles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Principal de Contacto -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Formulario de Contacto -->
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h2>Agenda tu Cita</h2>
+                        <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                    </div>
+
+                    <!-- Tabs del Formulario -->
+                    <div class="form-tabs">
+                        <button class="form-tab active" data-tab="cita">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Agendar Cita</span>
+                        </button>
+                        <button class="form-tab" data-tab="consulta">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Consulta General</span>
+                        </button>
+                        <button class="form-tab" data-tab="emergencia">
+                            <i class="fas fa-ambulance"></i>
+                            <span>Emergencia</span>
+                        </button>
+                    </div>
+
+                    <!-- Formulario de Cita -->
+                    <form id="appointmentForm" class="contact-form active">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="ownerName">
+                                    <i class="fas fa-user"></i> Nombre del Dueño *
+                                </label>
+                                <input type="text" id="ownerName" name="ownerName" required placeholder="Tu nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Teléfono *
+                                </label>
+                                <input type="tel" id="phone" name="phone" required placeholder="099 123 4567">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Email *
+                                </label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="petName">
+                                    <i class="fas fa-paw"></i> Nombre de la Mascota *
+                                </label>
+                                <input type="text" id="petName" name="petName" required placeholder="Nombre de tu mascota">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="petType">
+                                    <i class="fas fa-dog"></i> Tipo de Mascota *
+                                </label>
+                                <select id="petType" name="petType" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="perro">Perro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="ave">Ave</option>
+                                    <option value="conejo">Conejo</option>
+                                    <option value="hamster">Hámster</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="petAge">
+                                    <i class="fas fa-calendar"></i> Edad de la Mascota
+                                </label>
+                                <input type="text" id="petAge" name="petAge" placeholder="Ej: 2 años">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appointmentDate">
+                                    <i class="fas fa-calendar-alt"></i> Fecha Preferida *
+                                </label>
+                                <input type="date" id="appointmentDate" name="appointmentDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appointmentTime">
+                                    <i class="fas fa-clock"></i> Hora Preferida *
+                                </label>
+                                <select id="appointmentTime" name="appointmentTime" required>
+                                    <option value="">Selecciona una hora</option>
+                                    <option value="08:00">08:00 AM</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">
+                                <i class="fas fa-stethoscope"></i> Servicio Requerido *
+                            </label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="consulta">Consulta General</option>
+                                <option value="vacunacion">Vacunación</option>
+                                <option value="desparasitacion">Desparasitación</option>
+                                <option value="cirugia">Cirugía</option>
+                                <option value="grooming">Grooming</option>
+                                <option value="odontologia">Odontología</option>
+                                <option value="laboratorio">Análisis de Laboratorio</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-alt"></i> Mensaje / Motivo de la Consulta *
+                            </label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe el motivo de tu consulta o cualquier información adicional que debamos conocer..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span>Acepto los términos y condiciones y la política de privacidad</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                        </button>
+                    </form>
+
+                    <!-- Formulario de Consulta General -->
+                    <form id="consultationForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="consultName">
+                                    <i class="fas fa-user"></i> Nombre Completo *
+                                </label>
+                                <input type="text" id="consultName" name="consultName" required placeholder="Tu nombre completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="consultEmail">
+                                    <i class="fas fa-envelope"></i> Email *
+                                </label>
+                                <input type="email" id="consultEmail" name="consultEmail" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="consultPhone">
+                                <i class="fas fa-phone"></i> Teléfono
+                            </label>
+                            <input type="tel" id="consultPhone" name="consultPhone" placeholder="099 123 4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="consultSubject">
+                                <i class="fas fa-tag"></i> Asunto *
+                            </label>
+                            <select id="consultSubject" name="consultSubject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="informacion">Solicitud de Información</option>
+                                <option value="precios">Consulta de Precios</option>
+                                <option value="servicios">Información sobre Servicios</option>
+                                <option value="productos">Consulta sobre Productos</option>
+                                <option value="horarios">Horarios de Atención</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="consultMessage">
+                                <i class="fas fa-comment-alt"></i> Mensaje *
+                            </label>
+                            <textarea id="consultMessage" name="consultMessage" rows="6" required placeholder="Escribe tu consulta aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Consulta
+                        </button>
+                    </form>
+
+                    <!-- Formulario de Emergencia -->
+                    <form id="emergencyForm" class="contact-form">
+                        <div class="emergency-alert">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>¡Atención!</strong>
+                                <p>Si es una emergencia urgente, llama inmediatamente al <a href="tel:+593939737708">+593 99 123 4567</a></p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergencyName">
+                                    <i class="fas fa-user"></i> Nombre del Dueño *
+                                </label>
+                                <input type="text" id="emergencyName" name="emergencyName" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyPhone">
+                                    <i class="fas fa-phone"></i> Teléfono *
+                                </label>
+                                <input type="tel" id="emergencyPhone" name="emergencyPhone" required placeholder="099 123 4567">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emergencyPet">
+                                <i class="fas fa-paw"></i> Nombre y Tipo de Mascota *
+                            </label>
+                            <input type="text" id="emergencyPet" name="emergencyPet" required placeholder="Ej: Max - Perro Labrador">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emergencyType">
+                                <i class="fas fa-heartbeat"></i> Tipo de Emergencia *
+                            </label>
+                            <select id="emergencyType" name="emergencyType" required>
+                                <option value="">Selecciona el tipo</option>
+                                <option value="accidente">Accidente / Trauma</option>
+                                <option value="intoxicacion">Intoxicación</option>
+                                <option value="respiratoria">Dificultad Respiratoria</option>
+                                <option value="sangrado">Sangrado</option>
+                                <option value="convulsion">Convulsión</option>
+                                <option value="parto">Complicación en el Parto</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emergencyDescription">
+                                <i class="fas fa-comment-medical"></i> Descripción de la Emergencia *
+                            </label>
+                            <textarea id="emergencyDescription" name="emergencyDescription" rows="5" required placeholder="Describe la situación de emergencia con el mayor detalle posible..."></textarea>
+                        </div>
+
+                        <div class="emergency-actions">
+                            <a href="tel:+593991234567" class="btn btn-primary btn-emergency">
+                                <i class="fas fa-phone-alt"></i> Llamar Ahora
+                            </a>
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> Enviar Formulario
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!-- Información Lateral -->
+                <div class="contact-info-section">
+                    
+                    <!-- Mapa -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8168819531876!2d-79.88558032495743!3d-2.1894149371941577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d9845e2f4e5%3A0x3b0e8c5e7e0c8c0a!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1699999999999!5m2!1ses!2sec" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://maps.google.com" target="_blank" class="view-map-btn">
+                            <i class="fas fa-directions"></i> Ver en Google Maps
+                        </a>
+                    </div>
+
+                    <!-- Horarios Detallados -->
+                    <div class="schedule-card">
+                        <h3><i class="fas fa-clock"></i> Horarios de Atención</h3>
+                        <div class="schedule-list">
+                            <div class="schedule-item">
+                                <span class="day">Lunes - Viernes</span>
+                                <span class="time">24 Horas</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Sábados</span>
+                                <span class="time">24 Horas</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Domingos y Festivos</span>
+                                <span class="time">24 Horas</span>
+                            </div>
+                            <div class="schedule-item highlight">
+                                <span class="day">Emergencias</span>
+                                <span class="time">24/7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="social-card">
+                        <h3><i class="fas fa-share-alt"></i> Síguenos</h3>
+                        <p>Mantente conectado con nosotros en redes sociales</p>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Información Adicional -->
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Información Importante</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check-circle"></i> Aceptamos todas las formas de pago</li>
+                            <li><i class="fas fa-check-circle"></i> Parking gratuito disponible</li>
+                            <li><i class="fas fa-check-circle"></i> Atención sin cita previa</li>
+                            <li><i class="fas fa-check-circle"></i> Servicio de ambulancia veterinaria</li>
+                            <li><i class="fas fa-check-circle"></i> Farmacia veterinaria en sitio</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>VetCare Plus</span>
+                    </div>
+                    <p>Cuidando a tus mascotas con amor y profesionalismo desde 2014.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="servicios.html">Consultas</a></li>
+                        <li><a href="servicios.html">Vacunación</a></li>
+                        <li><a href="servicios.html">Cirugías</a></li>
+                        <li><a href="servicios.html">Emergencias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +593 99 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@vetcareplus.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Dom: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VetCare Plus. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante FAQ -->
+    <button class="faq-float-btn" id="faqFloatBtn" aria-label="Preguntas Frecuentes">
+        <i class="fas fa-question"></i>
+        <span class="faq-pulse"></span>
+    </button>
+
+    <!-- Panel de Preguntas Frecuentes (mismo código que antes) -->
+    <div class="faq-panel" id="faqPanel">
+        <!-- Aquí va el mismo contenido del FAQ -->
+    </div>
+
+    <div class="faq-overlay" id="faqOverlay"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

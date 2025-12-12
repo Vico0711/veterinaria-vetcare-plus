@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios - VetCare Plus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetCare Plus</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html" class="btn-contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Servicios -->
+    <section class="page-hero services-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="page-label">Nuestros Servicios</span>
+                <h1 class="page-title">Cuidado integral para tu mascota</h1>
+                <p class="page-subtitle">Ofrecemos una amplia gama de servicios veterinarios con tecnología de vanguardia y profesionales altamente calificados</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Servicios -->
+    <section class="services-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">
+                    <i class="fas fa-th"></i> Todos
+                </button>
+                <button class="filter-btn" data-filter="preventivo">
+                    <i class="fas fa-shield-alt"></i> Preventivo
+                </button>
+                <button class="filter-btn" data-filter="diagnostico">
+                    <i class="fas fa-stethoscope"></i> Diagnóstico
+                </button>
+                <button class="filter-btn" data-filter="quirurgico">
+                    <i class="fas fa-user-md"></i> Quirúrgico
+                </button>
+                <button class="filter-btn" data-filter="especializado">
+                    <i class="fas fa-star"></i> Especializado
+                </button>
+                <button class="filter-btn" data-filter="estetica">
+                    <i class="fas fa-cut"></i> Estética
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Servicios -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid-full">
+                
+                <!-- Servicio 1: Servicios de Salud -->
+                <div class="service-card-full" data-category="preventivo">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=600" alt="Servicios de Salud">
+                        <div class="service-badge">Esencial</div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div>
+                                <h3>Servicios de Salud</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Preventivo</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Programas completos de vacunación, desparacitación y consultas para el cuidado integral de tu mascota.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Vacunación completa (Polivalente, Rabia, etc.)</li>
+                            <li><i class="fas fa-check-circle"></i> Desparacitación interna y externa</li>
+                            <li><i class="fas fa-check-circle"></i> Chequeos preventivos periódicos</li>
+                            <li><i class="fas fa-check-circle"></i> Plan de salud personalizado</li>
+                            <li><i class="fas fa-check-circle"></i> Cartilla de vacunación digital</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$15</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar Cita</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Consultas Generales -->
+                <div class="service-card-full" data-category="diagnostico">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=600" alt="Consultas Generales">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <h3>Consultas Generales</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Diagnóstico</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Evaluación completa del estado de salud de tu mascota con diagnóstico profesional y recomendaciones personalizadas.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Examen físico completo</li>
+                            <li><i class="fas fa-check-circle"></i> Revisión de signos vitales</li>
+                            <li><i class="fas fa-check-circle"></i> Diagnóstico de enfermedades</li>
+                            <li><i class="fas fa-check-circle"></i> Plan de tratamiento detallado</li>
+                            <li><i class="fas fa-check-circle"></i> Seguimiento post-consulta</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$25</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar Cita</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Cirugías -->
+                <div class="service-card-full" data-category="quirurgico">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600" alt="Cirugías">
+                        <div class="service-badge special">Especializado</div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div>
+                                <h3>Cirugías</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Quirúrgico</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Procedimientos quirúrgicos con tecnología avanzada, anestesia segura y cuidados post-operatorios de primera.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Esterilización y castración</li>
+                            <li><i class="fas fa-check-circle"></i> Cirugías de tejidos blandos</li>
+                            <li><i class="fas fa-check-circle"></i> Cirugías ortopédicas</li>
+                            <li><i class="fas fa-check-circle"></i> Cirugías oncológicas</li>
+                            <li><i class="fas fa-check-circle"></i> Monitoreo anestésico continuo</li>
+                            <li><i class="fas fa-check-circle"></i> Hospitalización incluida</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$120</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Emergencias 24/7 -->
+                <div class="service-card-full" data-category="especializado">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600" alt="Emergencias">
+                        <div class="service-badge emergency">24/7</div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large emergency">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <div>
+                                <h3>Emergencias 24/7</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Especializado</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Atención de urgencias veterinarias las 24 horas del día, todos los días del año. Tu mascota nunca está sola.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Atención inmediata sin cita</li>
+                            <li><i class="fas fa-check-circle"></i> Traumatismos y accidentes</li>
+                            <li><i class="fas fa-check-circle"></i> Intoxicaciones</li>
+                            <li><i class="fas fa-check-circle"></i> Dificultad respiratoria</li>
+                            <li><i class="fas fa-check-circle"></i> Urgencias obstétricas</li>
+                            <li><i class="fas fa-check-circle"></i> UCI veterinaria disponible</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$50</span>
+                            </div>
+                            <a href="tel:+593991234567" class="btn btn-primary emergency-btn">
+                                <i class="fas fa-phone"></i> Llamar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Laboratorio Clínico -->
+                <div class="service-card-full" data-category="diagnostico">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600" alt="Laboratorio">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div>
+                                <h3>Laboratorio Clínico</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Diagnóstico</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Análisis clínicos completos con resultados rápidos y precisos para un diagnóstico certero.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Hemograma completo</li>
+                            <li><i class="fas fa-check-circle"></i> Perfil bioquímico</li>
+                            <li><i class="fas fa-check-circle"></i> Urianálisis</li>
+                            <li><i class="fas fa-check-circle"></i> Coprología</li>
+                            <li><i class="fas fa-check-circle"></i> Pruebas hormonales</li>
+                            <li><i class="fas fa-check-circle"></i> Resultados en 24-48 horas</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$30</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 6: Imagenología -->
+                <div class="service-card-full" data-category="diagnostico">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600" alt="Imagenología">
+                        <div class="service-badge special">Tecnología Avanzada</div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-x-ray"></i>
+                            </div>
+                            <div>
+                                <h3>Imagenología</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Diagnóstico</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Estudios de imagen de alta precisión para diagnósticos más certeros y tratamientos efectivos.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Radiografías digitales</li>
+                            <li><i class="fas fa-check-circle"></i> Ecografías abdominales</li>
+                            <li><i class="fas fa-check-circle"></i> Ecocardiografías</li>
+                            <li><i class="fas fa-check-circle"></i> Estudios de gestación</li>
+                            <li><i class="fas fa-check-circle"></i> Imágenes en tiempo real</li>
+                            <li><i class="fas fa-check-circle"></i> Interpretación por especialistas</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$40</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 7: Odontología -->
+                <div class="service-card-full" data-category="especializado">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=600" alt="Odontología">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <div>
+                                <h3>Odontología Veterinaria</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Especializado</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Cuidado dental completo para prevenir enfermedades periodontales y mantener la salud bucal de tu mascota.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Limpieza dental profunda</li>
+                            <li><i class="fas fa-check-circle"></i> Extracciones dentales</li>
+                            <li><i class="fas fa-check-circle"></i> Tratamiento de gingivitis</li>
+                            <li><i class="fas fa-check-circle"></i> Profilaxis dental</li>
+                            <li><i class="fas fa-check-circle"></i> Radiografías dentales</li>
+                            <li><i class="fas fa-check-circle"></i> Asesoría en higiene bucal</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$60</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 8: Grooming y Estética -->
+                <div class="service-card-full" data-category="estetica">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?w=600" alt="Grooming">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <div>
+                                <h3>Grooming y Estética</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Estética</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Servicios completos de estética y cuidado personal para que tu mascota luzca y se sienta increíble.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Baño medicado y estético</li>
+                            <li><i class="fas fa-check-circle"></i> Corte de pelo y estilizado</li>
+                            <li><i class="fas fa-check-circle"></i> Corte de uñas</li>
+                            <li><i class="fas fa-check-circle"></i> Limpieza de oídos</li>
+                            <li><i class="fas fa-check-circle"></i> Deslanado y cepillado</li>
+                            <li><i class="fas fa-check-circle"></i> Aromaterapia</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$20</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 9: Hospitalización -->
+                <div class="service-card-full" data-category="especializado">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=600" alt="Hospitalización">
+                        <div class="service-badge">Atención Continua</div>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h3>Hospitalización</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Especializado</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Internamiento con atención veterinaria continua en instalaciones modernas y confortables.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Monitoreo 24/7</li>
+                            <li><i class="fas fa-check-circle"></i> Fluidoterapia intravenosa</li>
+                            <li><i class="fas fa-check-circle"></i> Administración de medicamentos</li>
+                            <li><i class="fas fa-check-circle"></i> Áreas de recuperación climatizadas</li>
+                            <li><i class="fas fa-check-circle"></i> Comunicación constante con el dueño</li>
+                            <li><i class="fas fa-check-circle"></i> UCI disponible</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Por día</span>
+                                <span class="price">$35</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 10: Nutrición -->
+                <div class="service-card-full" data-category="preventivo">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=600" alt="Nutrición">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Nutrición y Dietética</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Preventivo</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Planes nutricionales personalizados para cada etapa de vida y condición de salud de tu mascota.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Evaluación nutricional completa</li>
+                            <li><i class="fas fa-check-circle"></i> Dietas terapéuticas</li>
+                            <li><i class="fas fa-check-circle"></i> Control de peso</li>
+                            <li><i class="fas fa-check-circle"></i> Asesoría en alimentación</li>
+                            <li><i class="fas fa-check-circle"></i> Suplementación nutricional</li>
+                            <li><i class="fas fa-check-circle"></i> Seguimiento mensual</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$30</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 11: Dermatología -->
+                <div class="service-card-full" data-category="especializado">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1583512603806-077998240c7a?w=600" alt="Dermatología">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-allergies"></i>
+                            </div>
+                            <div>
+                                <h3>Dermatología</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Especializado</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Diagnóstico y tratamiento de enfermedades de la piel, alergias y problemas dermatológicos.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Tratamiento de alergias</li>
+                            <li><i class="fas fa-check-circle"></i> Control de parásitos externos</li>
+                            <li><i class="fas fa-check-circle"></i> Terapia de enfermedades autoinmunes</li>
+                            <li><i class="fas fa-check-circle"></i> Raspados y cultivos</li>
+                            <li><i class="fas fa-check-circle"></i> Tratamiento de infecciones</li>
+                            <li><i class="fas fa-check-circle"></i> Shampoo terapia</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$35</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 12: Medicina Interna -->
+                <div class="service-card-full" data-category="especializado">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600" alt="Medicina Interna">
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon-large">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div>
+                                <h3>Medicina Interna</h3>
+                                <span class="service-category"><i class="fas fa-tag"></i> Especializado</span>
+                            </div>
+                        </div>
+                        <p class="service-description">Diagnóstico y manejo de enfermedades crónicas y complejas que afectan órganos internos.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Enfermedades cardiovasculares</li>
+                            <li><i class="fas fa-check-circle"></i> Problemas respiratorios</li>
+                            <li><i class="fas fa-check-circle"></i> Enfermedades renales</li>
+                            <li><i class="fas fa-check-circle"></i> Trastornos hepáticos</li>
+                            <li><i class="fas fa-check-circle"></i> Diabetes y endocrinología</li>
+                            <li><i class="fas fa-check-circle"></i> Oncología veterinaria</li>
+                        </ul>
+                        <div class="service-footer">
+                            <div class="service-price">
+                                <span class="price-label">Desde</span>
+                                <span class="price">$45</span>
+                            </div>
+                            <a href="contacto.html" class="btn btn-primary">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>¿Necesitas más información?</h2>
+            <p>Nuestro equipo está listo para asesorarte y encontrar el mejor servicio para tu mascota</p>
+            <a href="contacto.html" class="btn btn-light">Contactar Ahora</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-paw"></i>
+                    <span>VetCare Plus</span>
+                </div>
+                <p>Cuidando a tus mascotas con amor y profesionalismo desde 2014.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="servicios.html">Consultas</a></li>
+                    <li><a href="servicios.html">Vacunación</a></li>
+                    <li><a href="servicios.html">Cirugías</a></li>
+                    <li><a href="servicios.html">Emergencias</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Ciudad</li>
+                    <li><i class="fas fa-phone"></i> +593 99 123 4567</li>
+                    <li><i class="fas fa-envelope"></i> info@vetcareplus.com</li>
+                    <li><i class="fas fa-clock"></i> Lun-Dom: 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VetCare Plus. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Botón Flotante FAQ -->
+<button class="faq-float-btn" id="faqFloatBtn" aria-label="Preguntas Frecuentes">
+    <i class="fas fa-question"></i>
+    <span class="faq-pulse"></span>
+</button>
+
+<!-- Panel de Preguntas Frecuentes -->
+<div class="faq-panel" id="faqPanel">
+    <div class="faq-header">
+        <h3><i class="fas fa-comments"></i> Preguntas Frecuentes</h3>
+        <button class="faq-close" id="faqClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="faq-content">
+        <div class="faq-search">
+            <i class="fas fa-search"></i>
+            <input type="text" id="faqSearch" placeholder="Buscar pregunta...">
+        </div>
+        
+        <div class="faq-items">
+            <div class="faq-item" data-keywords="vacuna vacunacion edad cachorro gatito">
+                <div class="faq-question">
+                    <i class="fas fa-syringe"></i>
+                    <span>¿A partir de qué edad se puede empezar a vacunar?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Los cachorros y gatitos pueden comenzar su esquema de vacunación a partir de las <strong>6-8 semanas de edad</strong>. El calendario típico incluye:</p>
+                    <ul>
+                        <li>Primera dosis: 6-8 semanas</li>
+                        <li>Segunda dosis: 10-12 semanas</li>
+                        <li>Tercera dosis: 14-16 semanas</li>
+                        <li>Refuerzos anuales posteriores</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="desparasitacion vacunacion orden primero">
+                <div class="faq-question">
+                    <i class="fas fa-pills"></i>
+                    <span>¿Qué va primero, la desparasitación o la vacunación?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Siempre la desparasitación va primero.</strong> Es fundamental desparasitar a tu mascota <strong>15 días antes</strong> de aplicar cualquier vacuna. Esto garantiza que:</p>
+                    <ul>
+                        <li>El sistema inmune responda mejor a la vacuna</li>
+                        <li>La efectividad de la vacunación sea óptima</li>
+                        <li>Se eviten complicaciones durante el proceso</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="emergencia urgencia horario atencion">
+                <div class="faq-question">
+                    <i class="fas fa-ambulance"></i>
+                    <span>¿Atienden emergencias las 24 horas?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, contamos con <strong>servicio de emergencias 24/7</strong> todos los días del año. Nuestro equipo veterinario está disponible para atender cualquier urgencia que presente tu mascota, incluyendo:</p>
+                    <ul>
+                        <li>Traumatismos y accidentes</li>
+                        <li>Intoxicaciones</li>
+                        <li>Dificultad respiratoria</li>
+                        <li>Convulsiones</li>
+                        <li>Complicaciones durante el parto</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="consulta precio costo primera vez">
+                <div class="faq-question">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>¿Cuánto cuesta una consulta general?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Los costos de nuestras consultas son:</p>
+                    <ul>
+                        <li>Consulta general: $25 - $35</li>
+                        <li>Primera consulta con descuento: $20</li>
+                        <li>Consulta especializada: $40 - $60</li>
+                        <li>Emergencias: $50 - $80 (según horario)</li>
+                    </ul>
+                    <p><strong>Nota:</strong> Los precios pueden variar según tratamientos o procedimientos adicionales necesarios.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="alimentacion comida dieta mascota">
+                <div class="faq-question">
+                    <i class="fas fa-bone"></i>
+                    <span>¿Qué alimento es mejor para mi mascota?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La alimentación ideal depende de varios factores como edad, raza, tamaño y condiciones de salud. Recomendamos:</p>
+                    <ul>
+                        <li><strong>Cachorros:</strong> Alimento especial para cachorro con alto contenido proteico</li>
+                        <li><strong>Adultos:</strong> Alimento balanceado según nivel de actividad</li>
+                        <li><strong>Seniors:</strong> Alimento especial para mascotas mayores</li>
+                        <li><strong>Dietas especiales:</strong> Para alergias, sobrepeso o condiciones médicas</li>
+                    </ul>
+                    <p>Te recomendamos agendar una consulta nutricional para un plan personalizado.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="baño grooming estetica cuando">
+                <div class="faq-question">
+                    <i class="fas fa-bath"></i>
+                    <span>¿Cada cuánto tiempo debo bañar a mi mascota?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La frecuencia del baño depende del tipo de pelaje y estilo de vida:</p>
+                    <ul>
+                        <li><strong>Perros de pelo corto:</strong> Cada 4-6 semanas</li>
+                        <li><strong>Perros de pelo largo:</strong> Cada 3-4 semanas</li>
+                        <li><strong>Gatos:</strong> Generalmente no necesitan baños frecuentes (cada 2-3 meses o cuando sea necesario)</li>
+                        <li><strong>Mascotas con piel sensible:</strong> Cada 6-8 semanas con productos especiales</li>
+                    </ul>
+                    <p><strong>Importante:</strong> El baño excesivo puede resecar la piel y eliminar aceites naturales.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="esterilizacion castracion edad beneficios">
+                <div class="faq-question">
+                    <i class="fas fa-heart"></i>
+                    <span>¿Cuándo es recomendable esterilizar/castrar?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La edad ideal para la esterilización/castración es:</p>
+                    <ul>
+                        <li><strong>Perros y gatos:</strong> Entre 6-9 meses de edad</li>
+                        <li><strong>Razas grandes:</strong> Puede esperarse hasta 12-15 meses</li>
+                    </ul>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li>Previene embarazos no deseados</li>
+                        <li>Reduce riesgo de cáncer reproductivo</li>
+                        <li>Disminuye comportamientos agresivos</li>
+                        <li>Elimina el celo y sangrado en hembras</li>
+                        <li>Aumenta la esperanza de vida</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item" data-keywords="sintomas enfermo veterinario cuando llevar">
+                <div class="faq-question">
+                    <i class="fas fa-thermometer"></i>
+                    <span>¿Cuándo debo llevar a mi mascota al veterinario?</span>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Debes acudir inmediatamente si observas:</p>
+                    <ul>
+                        <li>Vómitos o diarrea persistente (más de 24 horas)</li>
+                        <li>Pérdida de apetito por más de 24 horas</li>
+                        <li>Letargo o debilidad extrema</li>
+                        <li>Dificultad para respirar</li>
+                        <li>Sangrado anormal</li>
+                        <li>Convulsiones</li>
+                        <li>Dolor evidente o quejidos</li>
+                        <li>Cambios en comportamiento habitual</li>
+                    </ul>
+                    <p><strong>Recuerda:</strong> Es mejor prevenir que lamentar. Ante cualquier duda, contáctanos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-footer">
+            <p>¿No encuentras tu respuesta?</p>
+            <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay para el panel FAQ -->
+<div class="faq-overlay" id="faqOverlay"></div>
+
+<script src="js/main.js"></script>
+<script src="js/servicios.js"></script>
+</body>
+</html>
