@@ -51,35 +51,40 @@
 ## 📸 Capturas de Pantalla
 
 ### Página de Inicio
-[CAPTURA AQUÍ - Screenshot del hero section del index.html]
+<img width="1920" height="876" alt="image" src="https://github.com/user-attachments/assets/f9eff10f-af67-46ec-bee6-3b78be923f73" />
+
 > Hero section con llamado a la acción y estadísticas animadas
 
-[CAPTURA AQUÍ - Screenshot de la sección de servicios destacados]
+<img width="1717" height="866" alt="image" src="https://github.com/user-attachments/assets/fd917d37-007d-4d6e-83c1-63fb7fe34a26" />
+
 > Sección de servicios destacados con tarjetas modernas
 
 ### Servicios
-[CAPTURA AQUÍ - Screenshot de servicios.html mostrando los filtros y las tarjetas de servicio]
+<img width="1705" height="874" alt="image" src="https://github.com/user-attachments/assets/499bfc40-9b09-482e-8486-33aa44a0c2b6" />
+
 > Sistema completo de servicios con filtros por categoría
 
-[CAPTURA AQUÍ - Screenshot de los planes de cuidado]
-> Planes de cuidado con precios y características
-
 ### Productos
-[CAPTURA AQUÍ - Screenshot de productos.html mostrando el grid de productos]
+<img width="1749" height="879" alt="image" src="https://github.com/user-attachments/assets/793685df-e555-430d-ae09-08983842103e" />
+
 > Catálogo de productos con sistema de búsqueda y filtros
 
-[CAPTURA AQUÍ - Screenshot del carrito de compras abierto]
+<img width="1716" height="865" alt="image" src="https://github.com/user-attachments/assets/57d1749a-a8d6-43a9-b122-edc11ef03d18" />
+
 > Carrito de compras con control de cantidad y cálculo de total
 
 ### Equipo
-[CAPTURA AQUÍ - Screenshot del equipo mostrando las tarjetas con efecto flip]
+<img width="1752" height="869" alt="image" src="https://github.com/user-attachments/assets/1d62aa4f-7d0f-4128-83f8-79db3e9fbbde" />
+
 > Presentación del equipo veterinario con tarjetas interactivas
 
 ### Contacto
-[CAPTURA AQUÍ - Screenshot de contacto.html mostrando el formulario de cita]
+<img width="1682" height="872" alt="image" src="https://github.com/user-attachments/assets/50438557-ad88-4fd3-a505-bfbdbadfad91" />
+
 > Formulario de contacto con validación en tiempo real
 
-[CAPTURA AQUÍ - Screenshot del FAQ flotante abierto]
+<img width="1734" height="864" alt="image" src="https://github.com/user-attachments/assets/9e054129-1f99-438f-b205-3c4427b58bbe" />
+
 > Panel de preguntas frecuentes flotante
 
 ---
